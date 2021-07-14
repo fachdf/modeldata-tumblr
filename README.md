@@ -1,5 +1,5 @@
 # modeldata-tumblr
-How to run :
+How to run : (install node js first)
 - 
 1). Server :
 use your terminal into /modeldata-tumblr/
