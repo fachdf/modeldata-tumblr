@@ -15,7 +15,7 @@ write this :
 - cd client
 - npm run serve
 
-Kelompok B7
-Fachri DF
-Syahid A
-Titis S
+# Kelompok B7
+- Fachri DF
+- Syahid A
+- Titis S
