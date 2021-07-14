@@ -162,7 +162,7 @@ export default {
         },
         postPostingan () {
           this.data.caption = this.caption;
-          this.data.username = this.session_user; 
+          this.data.username = this.session_user.username; 
           Postingan.createPostingan(this.data)
             .then(response => {
               console.log(response.message)

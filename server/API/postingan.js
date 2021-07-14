@@ -9,7 +9,7 @@ exports.createPostingan = async (req,res)=>{
     console.log(req.body);
     var postId, resId
     db.getDB().collection(postCollection).insertOne(
-        {username : userInput.username ,
+        {username : userInput.username,
          caption : userInput.caption,
          media : userInput.media,
          jumlah_like : 0,
@@ -105,6 +105,7 @@ exports.deletePostingan = async (req,res) => {
     const postID = req.params.id;
     db.getDB().collection(postCollection).findOneAndDelete(
         { _id : db.getPrimaryKey(postID) },
+        
         (err, result)=>{
             if(err){
                 console.log(err)
