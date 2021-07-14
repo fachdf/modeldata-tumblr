@@ -1,6 +1,6 @@
 <template>
- <div class="about">
-   <h1>Welcome about</h1>
+ <div dark>
+   <h1>Welcome to /about</h1>
  </div>
 </template>
 

@@ -3,12 +3,13 @@ const berandaAPI = require("../API/beranda")
 const router = express.Router();
 
 /* Create */
-router.post("/createBeranda", berandaAPI.createBeranda)
+
 
 /** Read */
 router.get("/getAllBeranda", berandaAPI.getAllBeranda)
 router.get("/getBerandaByID/:id", berandaAPI.getBerandaByID)
 
+router.get("/fetchpost/:username", berandaAPI.fetchPost)
 /*
 
 router.put("/updateNamaUser/:id", berandaAPI.updateNamaUser)
