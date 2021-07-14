@@ -50,7 +50,7 @@
         </v-list-item>
         <v-list-item
           link color="#FFFFFF">
-          <v-list-item-title>Hapus Semua</v-list-item-title>
+          <v-list-item-title @click="deleteUserNotification()">Hapus Semua</v-list-item-title>
         </v-list-item>
       </v-list>
       
@@ -103,6 +103,13 @@ export default {
         }
     },
     methods : {
+      deleteUserNotification(){
+        Notifikasi.deleteUserNotification(this.user)
+        .then((result)=>{
+          console.log(result)
+          this.notifikasi = []
+        })
+      },
       fetchNotifikasi(){
         Notifikasi.getUserNotification(this.user)
         .then((result)=>{
