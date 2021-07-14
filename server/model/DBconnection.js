@@ -5,8 +5,8 @@ const Joi = require('joi')
 const mongoOption = {useNewUrlParser : true, useUnifiedTopology: true};
 
 // Connection URL
-const url = "mongodb+srv://user_polban:Kzu4gbdge3PfQw9i@cluster0.15zf6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+const url = "mongodb+srv://user_polban:Kzu4gbdge3PfQw9i@cluster0.15zf6.mongodb.net/tumblr?retryWrites=true&w=majority";
+//const url = "mongodb://localhost:27017";
 /** Schema Input Validation */
 const userInputSchema = Joi.object({
     username: Joi.string()

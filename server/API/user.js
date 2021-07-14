@@ -14,7 +14,7 @@ db.getDB().collection(userCollection).insertOne(
     username : userInput.username,
     nama : userInput.nama,
     bio : "My name is " + userInput.nama + ". Welcome to my blog!",
-    blog_name : userInput.blog_name,
+    blog_name : userInput.nama_blog,
     email : userInput.email,
     password : bcrypt.hashSync(userInput.password, 10),
     diikuti : [],
