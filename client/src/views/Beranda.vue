@@ -170,7 +170,7 @@ export default {
             .catch( e => {
               console.log(e)
             })
-          this.getAllPostingan();
+          this.getBerandaPostingan();
         },
 
         getBerandaPostingan(){
@@ -240,7 +240,7 @@ export default {
       
     },
     mounted(){
-      //this.getBerandaPostingan();
+      this.getBerandaPostingan();
     }
     
 }
